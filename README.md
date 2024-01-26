@@ -29,3 +29,9 @@ npm run build
 ```bash
 npm run build:analyze
 ```
+
+## Related
+
+- [React Rspack Boilerplate](https://github.com/tjx666/react-rspack-boilerplate)
+- [Webpack](https://webpack.js.org/configuration/)
+- [Rsdoctor](https://rsdoctor.dev/)
