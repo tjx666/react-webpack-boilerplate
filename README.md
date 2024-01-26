@@ -1,5 +1,7 @@
 # React Webpack Boilerplate
 
+[![ci](https://github.com/tjx666/react-webpack-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/tjx666/react-webpack-boilerplate/actions/workflows/ci.yml)
+
 use modern tech to configure react + webpack
 
 ## Install
