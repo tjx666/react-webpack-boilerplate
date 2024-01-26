@@ -16,6 +16,7 @@ const config: Configuration = {
     output: {
         clean: true,
         path: inCwd('dist'),
+        filename: '[name]-[contenthash].js',
     },
     resolve: {
         extensions: ['.js', '.tsx', '.ts'],
@@ -70,28 +71,28 @@ const config: Configuration = {
                     },
                 },
                 generator: {
-                    filename: 'images/[hash][ext]',
+                    filename: 'images/[contenthash][ext]',
                 },
             },
             {
                 test: /\.(mp3|wav|flac|aac|ogg|aiff)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'audios/[hash][ext]',
+                    filename: 'audios/[contenthash][ext]',
                 },
             },
             {
                 test: /\.(mp4|mov|avi|flv|mkv|wmv)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'videos/[hash][ext]',
+                    filename: 'videos/[contenthash][ext]',
                 },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'fonts/[hash][ext]',
+                    filename: 'fonts/[contenthash][ext]',
                 },
             },
         ],

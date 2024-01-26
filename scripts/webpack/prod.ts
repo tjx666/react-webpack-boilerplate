@@ -14,7 +14,11 @@ const prodConfig: Configuration = {
         // 2MiB
         maxEntrypointSize: 1024 * 1024 * 2,
     },
-    plugins: [new MiniCssExtractPlugin()],
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name]-[contenthash].css',
+        }),
+    ],
     optimization: {
         runtimeChunk: {
             name: (entrypoint: { name: string }) => `runtime~${entrypoint.name}`,
