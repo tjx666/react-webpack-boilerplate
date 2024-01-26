@@ -28,7 +28,8 @@
     "scripts": {
         "dev": "tsx scripts/dev.ts --dev",
         "build": "tsx scripts/build.ts",
-        "build:analyze": "tsx scripts/build.ts --analyze"
+        "build:analyze": "tsx scripts/build.ts --analyze",
+        "check:type": "tsc -b tsconfig.check.json"
     },
     "dependencies": {
         "antd": "^5.13.2",
